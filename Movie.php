@@ -35,15 +35,6 @@ class Movie
     }
 }
 
-// creazione manuale di un istanza
-// $parasite = new Movie();
-// $parasite->title = 'Parasite';
-// $parasite->director = 'Bong Joon-ho';
-// $parasite->genre = 'Thriller';
-
-// creazione 'automatica' di un istanza con il costruttore
-
-// creo array di film per ciclare con [i]
 $moviesArray = [
     // creazione 'automatica' di un istanza con il costruttore
     $pulpFiction = new Movie(

@@ -1,8 +1,6 @@
 <?php
+// link del progetto php contenente i dati
 require_once __DIR__ . '/Movie.php';
-//classe
-
-
 ?>
 
 <!DOCTYPE html>
@@ -34,20 +32,19 @@ require_once __DIR__ . '/Movie.php';
                         <li class="list-group-item">Main Actors:</li>
                         <li class="list-group-item">
                             <ul class="list-group list-group-flush">
-                                <?php
-                                foreach ($movie->actors as $actor):
-                                ?>
+                                <!-- inizio foreach attori -->
+                                <?php foreach ($movie->actors as $actor): ?>
                                     <li class="list-group-item"><?php echo $actor ?></li>
                                 <?php endforeach; ?>
+                                <!-- fine foreach attori -->
                             </ul>
                         </li>
                     </ul>
                 </div>
-                <!-- fine foreach -->
             <?php endforeach; ?>
+            <!-- fine foreach -->
         </div>
     </div>
-
 </body>
 
 </html>
