@@ -23,11 +23,19 @@ class Movie
 // $parasite->genre = 'Thriller';
 
 // creazione 'automatica' di un istanza con il costruttore
-$pulpFiction = new Movie('Pulp Fiction', 'Quentin Tarantino', 'Thriller');
-$aSpaceOdissey = new Movie('2001 - a space odissey"', 'Stanley Kubrick', 'Sci-Fi');
+$goodFellas = new Movie('GoodFellas', 'Martin Scorsese', 'Thriller');
+$grandBudapestHotel = new Movie('Grand Budapes Hotel', 'Wes Anderson', 'Sci-Fi');
+$bigFish = new Movie('Big Fish', 'Tim Burton', 'Thriller');
 
-var_dump($pulpFiction, $aSpaceOdissey);
-
+// creo array di film per ciclare con [i]
+$moviesArray = [
+    // creazione 'automatica' di un istanza con il costruttore
+    $pulpFiction = new Movie('Pulp Fiction', 'Quentin Tarantino', 'Thriller'),
+    $aSpaceOdissey = new Movie('2001 - a space odissey"', 'Stanley Kubrick', 'Sci-Fi'),
+    $parasite = new Movie('Parasite', 'Bong Joon-ho', 'Thriller')
+];
+var_dump($moviesArray);
+var_dump('qui invece il film', $bigFish)
 
 ?>
 
