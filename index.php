@@ -1,4 +1,20 @@
 <?php
+
+class Movie
+{
+    public $title;
+    public $director;
+    public $genre;
+}
+
+$parasite = new Movie();
+$parasite->title = 'Parasite';
+$parasite->director = 'Bong Joon-ho';
+$parasite->genre = 'Thriller';
+
+var_dump($parasite);
+
+
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +27,11 @@
 </head>
 
 <body>
+
+    <h1><?php
+
+        ?>
+    </h1>
 
 </body>
 
