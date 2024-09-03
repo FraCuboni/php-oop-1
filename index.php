@@ -1,18 +1,32 @@
 <?php
-
+//classe
 class Movie
 {
+    // valori delle istanze (o oggetti)
     public $title;
     public $director;
     public $genre;
+
+    // costruttore
+    public function __construct($title, $director, $genre)
+    {
+        $this->title = $title;
+        $this->director = $director;
+        $this->genre = $genre;
+    }
 }
 
-$parasite = new Movie();
-$parasite->title = 'Parasite';
-$parasite->director = 'Bong Joon-ho';
-$parasite->genre = 'Thriller';
+// creazione manuale di un istanza
+// $parasite = new Movie();
+// $parasite->title = 'Parasite';
+// $parasite->director = 'Bong Joon-ho';
+// $parasite->genre = 'Thriller';
 
-var_dump($parasite);
+// creazione 'automatica' di un istanza con il costruttore
+$pulpFiction = new Movie('Pulp Fiction', 'Quentin Tarantino', 'Thriller');
+$aSpaceOdissey = new Movie('2001 - a space odissey"', 'Stanley Kubrick', 'Sci-Fi');
+
+var_dump($pulpFiction, $aSpaceOdissey);
 
 
 ?>
