@@ -24,16 +24,16 @@ require_once __DIR__ . '/Movie.php';
             ?>
                 <div class="card" style="width: 18rem;">
                     <div class="card-header">
-                        <h5><?php echo $movie->title ?></h5>
+                        <h5><?php echo $movie->getMovieTitle() ?></h5>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><?php echo $movie->director ?></li>
-                        <li class="list-group-item"><?php echo $movie->genre ?></li>
+                        <li class="list-group-item"><?php echo $movie->getMovieDirector() ?></li>
+                        <li class="list-group-item"><?php echo $movie->getMovieGenre() ?></li>
                         <li class="list-group-item">Main Actors:</li>
                         <li class="list-group-item">
                             <ul class="list-group list-group-flush">
                                 <!-- inizio foreach attori -->
-                                <?php foreach ($movie->actors as $actor): ?>
+                                <?php foreach ($movie->getMovieActors() as $actor): ?>
                                     <li class="list-group-item"><?php echo $actor ?></li>
                                 <?php endforeach; ?>
                                 <!-- fine foreach attori -->
